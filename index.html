@@ -112,7 +112,7 @@
     </section>
 
     <!-- Bloc Prévisions 7 jours + Température ---------------------------------------------->
-  <div clas="max-w-7xl w-full mx-auto">
+  <div class="flex max-w-7xl md:flex-row w-full mx-auto flex-col">
 <!-- Bloc température -------------------------->
   <div class="w-1/3 rounded-xl bg-white p-6 flex flex-col gap-4">
     <div class="pb-6 border-b-2 border-gray-200">
@@ -162,7 +162,22 @@
     </div>
   </div>
 
-    </div>
+  </div>
+  <!-- Bloc pour la carte météo -->
+  <div class="flex flex-col max-w-7xl mx-auto w-full bg-white rounded-xl p-6">
+
+      <span class="block text-lg font-medium mb-6">Carte météo</span>
+      <div class="h-64 w-full rounded-xl bg-blue-100">
+        <span class="absolute w-20 h-20 bg-yellow-200 rounded-[50%] opacity-25"></span>
+        <div class="flex flex-col justify-center items-center h-full">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#487ada" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin mb-4"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="block text-[#487ada] font-bold">Paris, France</span>
+          <span class="block font-medium text-[#487ada]">Cliquez pour voir la carte interactive</span>
+        </div>
+      </div>
+
+    
+  </div>
 
    
 </main>
